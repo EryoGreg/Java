@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="model.TypeCompteEntity" table="Type_Compte" schema="Java_Banque">
+        <id name="id">
+            <column name="Id" sql-type="int(11)"/>
+        </id>
+        <property name="libelle">
+            <column name="libelle" sql-type="varchar(255)"/>
+        </property>
+        <property name="taux">
+            <column name="taux" sql-type="float" precision="-1"/>
+        </property>
+    </class>
+</hibernate-mapping>
