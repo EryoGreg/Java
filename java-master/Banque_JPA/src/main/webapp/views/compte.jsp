@@ -1,20 +1,18 @@
-<%@ page import="main.webapp.controller.Login" %><%--
-  Created by IntelliJ IDEA.
-  User: gregoirepessiot
-  Date: 12/10/2018
-  Time: 11:39
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jstl/fmt" prefix="fmt" %>
+
+<fmt:requestEncoding value="UTF-8"/>
+
+<fmt:setLocale value="${param.lang}" scope="session"/>
+<fmt:setBundle basename="Resources.fr.ynov.Banque_JPA.bank"/>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <title>Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--===============================================================================================-->
-    <%-- <jsp:include page="loaders/cssLoader.jsp"></jsp:include> --%>
 </head>
 <body>
 <div class="limiter">
@@ -22,44 +20,45 @@
         <div class="wrap-login100">
             <form class="login100-form validate-form p-l-55 p-r-55 p-t-178" action="/login" method="post">
 					<span class="login100-form-title">
-						Sign In
+						<fmt:message key="signIn"/>
 					</span>
 
-                <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
-                    <input class="input100" type="text" name="login" placeholder="Username">
+                <div class="wrap-input100 validate-input m-b-16" data-validate="<fmt:message key="login"/>">
+                    <input class="input100" type="text" name="login" placeholder="<fmt:message key="username"/>">
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input" data-validate = "Please enter password">
-                    <input class="input100" type="password" name="password" placeholder="Password">
+                <div class="wrap-input100 validate-input" data-validate="<fmt:message key="enterPassword"/>">
+                    <input class="input100" type="password" name="password" placeholder="<fmt:message key="password"/>">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="text-right p-t-13 p-b-23">
 						<span class="txt1">
-							Forgot
+							<fmt:message key="forgot"/>
 						</span>
 
                     <a href="#" class="txt2">
-                        Username / Password?
+                        <fmt:message key="usernamePassword"/>
                     </a>
                 </div>
 
                 <c:if test="${errorMsg != null}">
-                   <p style="color: red"> <c:out value="${errorMsg}"/> </p>
+                    <p style="color: red"> <c:out value="${errorMsg}"/> </p>
                 </c:if>
 
                 <div class="container-login100-form-btn">
-                    <input type="submit" value="Sign In" class="login100-form-btn">
+                    <input type="submit" class="login100-form-btn" value='<fmt:message key="submit"/>'>
+
                 </div>
 
                 <div class="flex-col-c p-t-170 p-b-40">
 						<span class="txt1 p-b-9">
-							Don’t have an account?
+							<fmt:message key="noAccount"/>
 						</span>
 
                     <a href="/signup" class="txt3">
-                        Sign up now
+                        <fmt:message key="createAccount"/>
                     </a>
                 </div>
             </form>
@@ -68,6 +67,12 @@
 </div>
 
 <jsp:include page="loaders/scriptLoader.jsp"></jsp:include>
+
+<ul>
+    <li><a href="?lang=fr">Français</a></li>
+    <li><a href="?lang=en">Anglais</a></li>
+</ul>
+
 
 
 </body>
