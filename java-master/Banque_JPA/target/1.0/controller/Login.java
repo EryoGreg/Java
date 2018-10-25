@@ -4,7 +4,6 @@ import main.webapp.manager.ClientManager;
 import main.webapp.model.Client;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -43,10 +42,8 @@ public class Login extends HttpServlet {
                 req.setAttribute("errorMsg","Aucun utilisateur connu avec ce mot de passe");
                 loginDispatcher.forward(req, resp);
             } else {
-
                 req.getSession().setAttribute("client", client);
-                System.out.println("toto");
-                logger.debug(client);
+                req.getSession().setMaxInactiveInterval(2*60);
                 resp.sendRedirect(req.getContextPath() + "/compte");
             }
         }

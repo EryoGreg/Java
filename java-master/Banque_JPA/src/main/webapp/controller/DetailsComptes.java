@@ -14,7 +14,7 @@ public class DetailsComptes extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/details_compte.jsp");
-        //Client client = (Client) request.getSession().getAttribute("client");
+        Client client = (Client) request.getSession().getAttribute("client");
         dispatcher.forward(request, response);
     }
 

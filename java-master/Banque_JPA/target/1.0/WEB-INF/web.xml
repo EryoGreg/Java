@@ -4,12 +4,4 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-    <!--<servlet>-->
-        <!--<servlet-name>Page de Connexion</servlet-name>-->
-        <servlet-class>main.webapp.controller.Login</servlet-class>-->
-    <!--</servlet>-->
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>URL Index</servlet-name>-->
-        <!--<url-pattern>/Index</url-pattern>-->
-    <!--</servlet-mapping>-->
 </web-app>
