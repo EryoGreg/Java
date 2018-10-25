@@ -8,28 +8,527 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bd0d57f-19e2-4868-9cde-1704a01f5176" name="Default" comment="Testing commit">
-      <change afterPath="$PROJECT_DIR$/.idea/resourceBundles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_fr.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/controller/Compte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/controller/DetailsComptes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/filter/ConnectionFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/resourceBundles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/resourceBundles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/loaders/cssLoader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/loaders/cssLoader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/loaders/scriptLoader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/loaders/scriptLoader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/sign_in.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/comptes.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Banque_JPA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Banque_JPA.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_fr.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/controller/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/controller/Compte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/controller/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/model/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/model/Compte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/compte.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/css/util.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/JosefinSans/JosefinSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/JosefinSans/JosefinSans-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/JosefinSans/JosefinSans-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/JosefinSans/JosefinSans-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/JosefinSans/JosefinSans-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/JosefinSans/JosefinSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/JosefinSans/JosefinSans-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/JosefinSans/JosefinSans-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/JosefinSans/JosefinSans-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/JosefinSans/JosefinSans-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/JosefinSans/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/iconic/css/material-design-iconic-font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/iconic/css/material-design-iconic-font.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/source-sans-pro/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/source-sans-pro/SourceSansPro-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/source-sans-pro/SourceSansPro-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/source-sans-pro/SourceSansPro-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/source-sans-pro/SourceSansPro-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/source-sans-pro/SourceSansPro-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/source-sans-pro/SourceSansPro-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/source-sans-pro/SourceSansPro-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/ubuntu/UFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/ubuntu/Ubuntu-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/ubuntu/Ubuntu-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/ubuntu/Ubuntu-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/ubuntu/Ubuntu-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/ubuntu/Ubuntu-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/ubuntu/Ubuntu-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/ubuntu/Ubuntu-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/fonts/ubuntu/Ubuntu-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/images/icons/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/images/icons/map-marker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/loaders/cssLoader.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/loaders/scriptLoader.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/animate/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/animsition/css/animsition.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/animsition/css/animsition.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/animsition/js/animsition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/animsition/js/animsition.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/js/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/js/tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/countdowntime/countdowntime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/css-hamburgers/hamburgers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/css-hamburgers/hamburgers.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/daterangepicker/daterangepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/daterangepicker/daterangepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/daterangepicker/moment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/daterangepicker/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/jquery/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/perfect-scrollbar/perfect-scrollbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/perfect-scrollbar/perfect-scrollbar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/select2/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/select2/select2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/select2/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/vendor/select2/select2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ressources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ressources/log4j2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/controller/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/controller/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/manager/ClientManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/manager/ClientManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/model/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/model/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/model/Transaction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/loaders/cssLoader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/loaders/cssLoader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/loaders/scriptLoader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/loaders/scriptLoader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/views/loaders/cssLoader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/views/loaders/cssLoader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/views/loaders/scriptLoader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/views/loaders/scriptLoader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/loaders/cssLoader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/views/loaders/cssLoader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/loaders/scriptLoader.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/views/loaders/scriptLoader.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/model/Compte.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/model/Compte.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/css/util.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/JosefinSans/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/iconic/css/material-design-iconic-font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/iconic/css/material-design-iconic-font.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/source-sans-pro/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/ubuntu/UFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/ubuntu/Ubuntu-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/ubuntu/Ubuntu-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/ubuntu/Ubuntu-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/ubuntu/Ubuntu-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/ubuntu/Ubuntu-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/ubuntu/Ubuntu-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/ubuntu/Ubuntu-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/fonts/ubuntu/Ubuntu-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/images/icons/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/images/icons/map-marker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/loaders/cssLoader.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/loaders/scriptLoader.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/animate/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/animsition/css/animsition.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/animsition/css/animsition.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/animsition/js/animsition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/animsition/js/animsition.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/js/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/bootstrap/js/tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/countdowntime/countdowntime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/css-hamburgers/hamburgers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/css-hamburgers/hamburgers.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/daterangepicker/daterangepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/daterangepicker/daterangepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/daterangepicker/moment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/daterangepicker/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/jquery/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/perfect-scrollbar/perfect-scrollbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/perfect-scrollbar/perfect-scrollbar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/select2/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/select2/select2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/select2/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/views/vendor/select2/select2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/ressources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/ressources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/controller/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/model/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/model/Compte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/model/client.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/model/client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/css/util.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/JosefinSans/JosefinSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/JosefinSans/JosefinSans-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/JosefinSans/JosefinSans-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/JosefinSans/JosefinSans-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/JosefinSans/JosefinSans-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/JosefinSans/JosefinSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/JosefinSans/JosefinSans-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/JosefinSans/JosefinSans-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/JosefinSans/JosefinSans-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/JosefinSans/JosefinSans-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/JosefinSans/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/iconic/css/material-design-iconic-font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/iconic/css/material-design-iconic-font.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/source-sans-pro/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/source-sans-pro/SourceSansPro-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/source-sans-pro/SourceSansPro-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/source-sans-pro/SourceSansPro-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/source-sans-pro/SourceSansPro-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/source-sans-pro/SourceSansPro-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/source-sans-pro/SourceSansPro-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/source-sans-pro/SourceSansPro-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/source-sans-pro/SourceSansPro-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/source-sans-pro/SourceSansPro-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/source-sans-pro/SourceSansPro-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/source-sans-pro/SourceSansPro-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/source-sans-pro/SourceSansPro-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/ubuntu/UFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/ubuntu/Ubuntu-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/ubuntu/Ubuntu-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/ubuntu/Ubuntu-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/ubuntu/Ubuntu-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/ubuntu/Ubuntu-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/ubuntu/Ubuntu-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/ubuntu/Ubuntu-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/fonts/ubuntu/Ubuntu-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/images/icons/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/images/icons/map-marker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/loaders/cssLoader.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/loaders/scriptLoader.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/animate/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/animsition/css/animsition.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/animsition/css/animsition.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/animsition/js/animsition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/animsition/js/animsition.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/js/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/bootstrap/js/tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/countdowntime/countdowntime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/css-hamburgers/hamburgers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/css-hamburgers/hamburgers.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/daterangepicker/daterangepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/daterangepicker/daterangepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/daterangepicker/moment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/daterangepicker/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/jquery/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/perfect-scrollbar/perfect-scrollbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/perfect-scrollbar/perfect-scrollbar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/select2/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/select2/select2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/select2/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/1.0/views/vendor/select2/select2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/controller/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/controller/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/model/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/model/Compte.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/model/Compte.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/css/util.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/JosefinSans/JosefinSans-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/JosefinSans/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/iconic/css/material-design-iconic-font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/iconic/css/material-design-iconic-font.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/iconic/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/source-sans-pro/OFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-ExtraLight.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-ExtraLightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/source-sans-pro/SourceSansPro-SemiBoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/ubuntu/UFL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/ubuntu/Ubuntu-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/ubuntu/Ubuntu-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/ubuntu/Ubuntu-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/ubuntu/Ubuntu-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/ubuntu/Ubuntu-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/ubuntu/Ubuntu-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/ubuntu/Ubuntu-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/fonts/ubuntu/Ubuntu-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/images/icons/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/images/icons/map-marker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/loaders/cssLoader.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/loaders/scriptLoader.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/animate/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/animsition/css/animsition.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/animsition/css/animsition.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/animsition/js/animsition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/animsition/js/animsition.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/js/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/bootstrap/js/tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/countdowntime/countdowntime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/css-hamburgers/hamburgers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/css-hamburgers/hamburgers.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/daterangepicker/daterangepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/daterangepicker/daterangepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/daterangepicker/moment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/daterangepicker/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/jquery/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/perfect-scrollbar/perfect-scrollbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/perfect-scrollbar/perfect-scrollbar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/select2/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/select2/select2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/select2/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/views/vendor/select2/select2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ressources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ressources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Test01.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -76,83 +575,86 @@
     <session id="2110484715">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="a" value="1" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="19" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="56" />
           <entry key="js" value="4" />
-          <entry key="jsp" value="13" />
+          <entry key="jsp" value="33" />
+          <entry key="log" value="7" />
           <entry key="login_en" value="1" />
           <entry key="login_fr" value="1" />
-          <entry key="properties" value="4" />
-          <entry key="xml" value="6" />
+          <entry key="properties" value="14" />
+          <entry key="sql" value="3" />
+          <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="19" />
-          <entry key="JSP" value="13" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="56" />
+          <entry key="JSP" value="33" />
           <entry key="JavaScript" value="4" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Properties" value="4" />
-          <entry key="XML" value="6" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Properties" value="14" />
+          <entry key="Scratch" value="3" />
+          <entry key="XML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="134" />
-          <entry key="jsp" value="355" />
+          <entry key="dummy" value="1" />
+          <entry key="java" value="1589" />
+          <entry key="jsp" value="1022" />
           <entry key="login_en" value="40" />
           <entry key="login_fr" value="114" />
-          <entry key="properties" value="384" />
+          <entry key="properties" value="695" />
           <entry key="txt" value="15" />
+          <entry key="xml" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="134" />
-          <entry key="JSP" value="355" />
-          <entry key="PLAIN_TEXT" value="169" />
-          <entry key="Properties" value="384" />
+          <entry key="JAVA" value="1589" />
+          <entry key="JSP" value="1022" />
+          <entry key="PLAIN_TEXT" value="170" />
+          <entry key="Properties" value="695" />
+          <entry key="XML" value="66" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/views/login.jsp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/controller/DetailsComptes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="225">
+              <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
               <folding>
-                <element signature="n#c:if#0;n#fmt:setBundle#0;n#jsp:root#0;n#!!top" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_en.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/controller/Compte.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-            </state>
-          </provider>
-          <provider editor-type-id="ResourceBundle" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_fr.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="225">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,10 +662,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/controller/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="272">
+              <caret line="23" column="85" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="70" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/compte.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/model/Compte.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1160#1161#0" expanded="true" />
+                <element signature="e#1194#1195#0" expanded="true" />
+                <element signature="e#1220#1221#0" expanded="true" />
+                <element signature="e#1245#1246#0" expanded="true" />
+                <element signature="e#1279#1280#0" expanded="true" />
+                <element signature="e#1309#1310#0" expanded="true" />
+                <element signature="e#1340#1341#0" expanded="true" />
+                <element signature="e#1368#1369#0" expanded="true" />
+                <element signature="e#1406#1407#0" expanded="true" />
+                <element signature="e#1442#1443#0" expanded="true" />
+                <element signature="e#1491#1492#0" expanded="true" />
+                <element signature="e#1526#1527#0" expanded="true" />
+                <element signature="e#1574#1575#0" expanded="true" />
+                <element signature="e#1608#1609#0" expanded="true" />
+                <element signature="e#1640#1641#0" expanded="true" />
+                <element signature="e#1668#1669#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -183,36 +731,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ClientManager</find>
-      <find>loadClientByLoginAndPassword</find>
-      <find>tom</find>
-      <find>myBankJPA</find>
-      <find>classNa</find>
-      <find>port=</find>
-      <find>SERVER</find>
-      <find>SERVICE</find>
-      <find>port:</find>
-      <find>Host</find>
-      <find>tomc</find>
-      <find>Banque</find>
-      <find>test2</find>
-      <find>servlet</find>
-      <find>catalina</find>
-      <find>404</find>
-      <find>antoinepoussard</find>
-      <find>poussa</find>
-      <find>scriptLoader.jsp</find>
-      <find>/login</find>
-      <find>forgo</find>
-      <find>si</find>
-      <find>set</find>
-      <find>sign</find>
-      <find>subm</find>
-      <find>username</find>
-      <find>passw</find>
-      <find>password</find>
-      <find>forg</find>
       <find>userna</find>
+      <find>scope</find>
+      <find>logi</find>
+      <find>webcontext</find>
+      <find>ger\(\)\;\n        return em\.find\(Client\.class\, clientID\)\;\n    \}\n\n    public static Client loadClientByLoginAndPassword\(String login\, String password\) \{\n        EntityManager em \= getEntityManager\(\)\;\n        TypedQuery\&lt;Client\&gt; query \= em\.createQuery\(\n                \&quot;SELECT c FROM Client c WHERE c\.login\=\'\&quot; \+ login \+ \&quot;\'and c\.password\=\'\&quot; \+ password \+ \&quot;\'\&quot;\, Client\.class\)\;\n        Client cli \= query\.getSingleResult\(\)\;\n        return cli\;\n    \}\n\n    public static void purgeTable\(\)\{\n        EntityManager em \= getEntityManager\(\)\;\n        em\.getTransaction\(\)\.be</find>
+      <find>&lt;%@ imp</find>
+      <find>resource</find>
+      <find>fmt</find>
+      <find>log4</find>
+      <find>target</find>
+      <find>/var</find>
+      <find>base</find>
+      <find>log4j</find>
+      <find>${compte</find>
+      <find>Id</find>
+      <find>compte</find>
+      <find>3000</find>
+      <find>â</find>
+      <find>ServletException</find>
+      <find>owner</find>
+      <find>pess</find>
+      <find>pes</find>
+      <find>get</find>
+      <find>item</find>
+      <find>servlet</find>
+      <find>uti</find>
+      <find>clie</find>
+      <find>var</find>
+      <find>et</find>
+      <find>main.webapp.controller</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -221,10 +769,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/model/Utilisateur.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/model/Compte.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/model/client.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/model/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/model/Type_Compte.java" />
@@ -234,39 +778,48 @@
         <option value="$PROJECT_DIR$/src/test/Test01.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/model/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/App.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/model/Compte.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/ressources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/and.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/cssLoader.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/accueil.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/controller/Accueil.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/vendor/signup.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/signup.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/controller/Signup.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/views/comptes.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/manager/ClientManager.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/model/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/model/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/model/Client.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/manager/BaseManager.java" />
-        <option value="$PROJECT_DIR$/test/Test01.java" />
-        <option value="$PROJECT_DIR$/test/Test01.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/loaders/cssLoader.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/loaders/scriptLoader.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/sign_in.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/controller/Login.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/controller/Comptes.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/controller/Compte.java" />
         <option value="$PROJECT_DIR$/src/Resources/en/login_en.java" />
         <option value="$PROJECT_DIR$/src/Resources/en/login_en" />
         <option value="$PROJECT_DIR$/src/Resources/fr/login_fr" />
-        <option value="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_en.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/comptes.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/vendor/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/footer.jsp" />
+        <option value="$PROJECT_DIR$/src/ressources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/views/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/filter/ConnectionFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/model/Compte.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/model/Compte.java" />
+        <option value="$PROJECT_DIR$/test/Test01.java" />
+        <option value="$PROJECT_DIR$/test/Test01.java" />
         <option value="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_fr.properties" />
+        <option value="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_en.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/header.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/compte.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/model/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/model/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/model/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/controller/detailsComptes.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/views/details_compte.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/controller/Compte.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/controller/DetailsComptes.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/controller/Login.java" />
       </list>
     </option>
   </component>
@@ -311,6 +864,23 @@
     <option name="width" value="1440" />
     <option name="height" value="811" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>XML</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CheckTagEmptyBody</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -347,13 +917,6 @@
               <item name="Banque_JPA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Banque_JPA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Banque_JPA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -361,15 +924,15 @@
               <item name="Banque_JPA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Banque_JPA" type="b2602c69:ProjectViewProjectNode" />
               <item name="Banque_JPA" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="loaders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Banque_JPA" type="b2602c69:ProjectViewProjectNode" />
@@ -380,7 +943,24 @@
             <path>
               <item name="Banque_JPA" type="b2602c69:ProjectViewProjectNode" />
               <item name="Banque_JPA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ressources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Banque_JPA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Banque_JPA" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Banque_JPA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Banque_JPA" type="462c0819:PsiDirectoryNode" />
+              <item name="var" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Banque_JPA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Banque_JPA" type="462c0819:PsiDirectoryNode" />
+              <item name="var" type="462c0819:PsiDirectoryNode" />
+              <item name="log" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -393,7 +973,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539859784740" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539963054342" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -403,21 +983,21 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/var/log" />
+      <recent name="$PROJECT_DIR$/var" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/views" />
+      <recent name="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/views/loaders" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/views" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="main.webapp.controller" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/views/loaders" />
-      <recent name="$PROJECT_DIR$/src" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/views" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -682,10 +1262,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test01.test1SaveClient" />
-        <item itemvalue="JUnit.Test01 (1)" />
         <item itemvalue="JUnit.Test01.test2LoadClient" />
+        <item itemvalue="JUnit.Test01 (1)" />
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.Test01.test1SaveClient" />
         <item itemvalue="JUnit.Test01.test3CreateClient" />
       </list>
     </recent_temporary>
@@ -703,7 +1283,13 @@
       <workItem from="1538748228850" duration="5208000" />
       <workItem from="1539243337501" duration="16360000" />
       <workItem from="1539330037314" duration="17617000" />
-      <workItem from="1539846222383" duration="13090000" />
+      <workItem from="1539846222383" duration="21897000" />
+      <workItem from="1539932993418" duration="321000" />
+      <workItem from="1539933416811" duration="8455000" />
+      <workItem from="1539945179864" duration="925000" />
+      <workItem from="1539946996961" duration="5000" />
+      <workItem from="1539950672700" duration="10651000" />
+      <workItem from="1539962623986" duration="481000" />
     </task>
     <task id="LOCAL-00001" summary="Testing commit">
       <created>1539850688704</created>
@@ -716,39 +1302,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test01_test3CreateClient - 2018.10.18 at 09h 27m 50s.xml">
+    <history-entry file="Test01_test3CreateClient - 2018.10.19 at 12h 00m 13s.xml">
       <configuration name="Test01.test3CreateClient" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test01_test3CreateClient - 2018.10.18 at 09h 29m 40s.xml">
+    <history-entry file="Test01_test3CreateClient - 2018.10.19 at 12h 03m 49s.xml">
       <configuration name="Test01.test3CreateClient" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test01_test3CreateClient - 2018.10.18 at 09h 30m 08s.xml">
-      <configuration name="Test01.test3CreateClient" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test01_test3CreateClient - 2018.10.18 at 09h 30m 57s.xml">
-      <configuration name="Test01.test3CreateClient" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test01_test3CreateClient - 2018.10.18 at 09h 33m 28s.xml">
-      <configuration name="Test01.test3CreateClient" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test01_test1SaveClient - 2018.10.18 at 10h 02m 09s.xml">
+    <history-entry file="Test01_test1SaveClient - 2018.10.19 at 14h 40m 16s.xml">
       <configuration name="Test01.test1SaveClient" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test01_test2LoadClient - 2018.10.18 at 10h 02m 14s.xml">
-      <configuration name="Test01.test2LoadClient" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test01_(1) - 2018.10.18 at 10h 04m 55s.xml">
+    <history-entry file="Test01_(1) - 2018.10.19 at 14h 40m 29s.xml">
       <configuration name="Test01 (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test01_test1SaveClient - 2018.10.18 at 10h 05m 28s.xml">
-      <configuration name="Test01.test1SaveClient" configurationId="JUnit" />
+    <history-entry file="Test01_(1) - 2018.10.19 at 14h 56m 11s.xml">
+      <configuration name="Test01 (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test01_test1SaveClient - 2018.10.18 at 10h 12m 48s.xml">
-      <configuration name="Test01.test1SaveClient" configurationId="JUnit" />
+    <history-entry file="Test01_test2LoadClient - 2018.10.19 at 14h 56m 17s.xml">
+      <configuration name="Test01.test2LoadClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test01_test2LoadClient - 2018.10.19 at 14h 56m 49s.xml">
+      <configuration name="Test01.test2LoadClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test01_test2LoadClient - 2018.10.19 at 15h 04m 03s.xml">
+      <configuration name="Test01.test2LoadClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test01_test2LoadClient - 2018.10.19 at 15h 18m 41s.xml">
+      <configuration name="Test01.test2LoadClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test01_test2LoadClient - 2018.10.19 at 15h 24m 23s.xml">
+      <configuration name="Test01.test2LoadClient" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52275000" />
+    <option name="totallyTimeSpent" value="81920000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -760,10 +1346,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="811" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="811" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48507464" visible="true" weight="0.25894135" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48507464" visible="true" weight="0.21173105" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Persistence" order="2" sideWeight="0.51492536" side_tool="true" weight="0.25894135" />
       <window_info id="Designer" order="3" />
@@ -775,20 +1361,20 @@
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.32962447" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32962447" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49928468" weight="0.6272601" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.3991655" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49928468" weight="0.23783033" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.6689847" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32962447" />
       <window_info anchor="bottom" id="Application Servers" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32823366" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.6272601" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3285568" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32823366" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3297568" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24964234" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
@@ -797,9 +1383,47 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48507464" visible="true" weight="0.22174536" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Persistence" order="2" sideWeight="0.51492536" side_tool="true" weight="0.25894135" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Web" order="8" sideWeight="0.51492536" side_tool="true" weight="0.25894135" />
+      <window_info anchor="bottom" id="Database Changes" order="0" weight="0.32962447" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32962447" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49928468" weight="0.6620306" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.6689847" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32962447" />
+      <window_info anchor="bottom" id="Application Servers" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32823366" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.6272601" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32823366" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.3297568" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.24964234" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32967034" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32904148" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -817,6 +1441,10 @@
       </configuration>
     </watches-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
@@ -831,15 +1459,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/ressources.properties" />
     <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/model/Type_Compte.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/53a71cd1-96f4-4f32-b872-ad92bb71befc/console.sql" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/and.java" />
-    <entry file="file://$PROJECT_DIR$/src/ressources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/css/util.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -858,16 +1478,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/signup.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/controller/Signup.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/controller/Accueil.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -889,44 +1499,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Banque_JPA.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-356" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/model/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#654#662#0" expanded="true" />
-            <element signature="e#1371#1372#0" expanded="true" />
-            <element signature="e#1396#1397#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/vendor/jquery/jquery-3.2.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="17372" selection-start-line="3" selection-start-column="17372" selection-end-line="3" selection-end-column="17372" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/model/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/manager/BaseManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -937,16 +1513,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/sign_in.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Resources/a">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/sign_in.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/Resources/a" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/views/vendor/bootstrap/js/popper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -961,85 +1529,220 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank.properties" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/53a71cd1-96f4-4f32-b872-ad92bb71befc/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/53a71cd1-96f4-4f32-b872-ad92bb71befc/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/footer.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/manager/BaseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Banque_JPA.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/manager/ClientManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+        <state relative-caret-position="285">
+          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/log/test.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ressources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="66" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/model/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/filter/ConnectionFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="37" column="2" selection-start-line="37" selection-start-column="2" selection-end-line="37" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Test01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_fr.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_en.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/compte.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/details_compte.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/model/Compte.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        <state relative-caret-position="150">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#1340#1341#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
+            <element signature="e#1442#1443#0" expanded="true" />
+            <element signature="e#1491#1492#0" expanded="true" />
+            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="e#1608#1609#0" expanded="true" />
+            <element signature="e#1640#1641#0" expanded="true" />
+            <element signature="e#1668#1669#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/controller/Compte.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/comptes.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="61" column="22" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/controller/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="225">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_fr.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/controller/DetailsComptes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_en.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/Test01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="225">
+          <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
           <folding>
-            <element signature="n#c:if#0;n#fmt:setBundle#0;n#jsp:root#0;n#!!top" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="86" selection-start-line="23" selection-start-column="86" selection-end-line="23" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1371#1372#0" expanded="true" />
+            <element signature="e#1396#1397#0" expanded="true" />
+            <element signature="e#1426#1427#0" expanded="true" />
+            <element signature="e#1452#1453#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+            <element signature="e#1514#1515#0" expanded="true" />
+            <element signature="e#1546#1547#0" expanded="true" />
+            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="e#1606#1607#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1669#1670#0" expanded="true" />
+            <element signature="e#1700#1701#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
+            <element signature="e#1760#1761#0" expanded="true" />
+            <element signature="e#1798#1799#0" expanded="true" />
+            <element signature="e#1834#1835#0" expanded="true" />
+            <element signature="e#1868#1869#0" expanded="true" />
+            <element signature="e#1898#1899#0" expanded="true" />
+            <element signature="e#2044#2045#0" expanded="true" />
+            <element signature="e#2074#2075#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="70" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/controller/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="85" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/compte.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
         </state>
       </provider>
     </entry>

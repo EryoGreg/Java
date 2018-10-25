@@ -1,5 +1,4 @@
 package main.webapp.model;
-
 import javax.persistence.*;
 import java.util.Date;
 import java.util.LinkedHashSet;
@@ -22,7 +21,7 @@ public class Client {
     private Date date_of_birth;
     private String address;
 
-    @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Compte> comptes = new LinkedHashSet<Compte>();
 
     public Client(String nom, String prenom, String email, String login, String password, String phone, Date date_of_birth, String address) {
@@ -86,5 +85,9 @@ public class Client {
     public void setComptes(Compte cpt) {
         cpt.setOwner(this);
         this.comptes.add(cpt);
+    }
+
+    public Set<Compte> getComptes() {
+        return comptes;
     }
 }

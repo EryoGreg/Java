@@ -2,6 +2,8 @@ package main.webapp.controller;
 
 import main.webapp.manager.ClientManager;
 import main.webapp.model.Client;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -11,18 +13,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/login")
+@WebServlet(urlPatterns = {"","/login"})
 public class Login extends HttpServlet {
+
+    Logger logger = LogManager.getLogger(Login.class);
+
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/views/login.jsp");
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/login.jsp");
         dispatcher.forward(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher loginDispatcher = getServletContext().getRequestDispatcher("/views/login.jsp");
+        RequestDispatcher loginDispatcher = getServletContext().getRequestDispatcher("/WEB-INF/views/login.jsp");
         String login = req.getParameter("login");
         String password = req.getParameter("password");
 
@@ -38,8 +43,11 @@ public class Login extends HttpServlet {
                 req.setAttribute("errorMsg","Aucun utilisateur connu avec ce mot de passe");
                 loginDispatcher.forward(req, resp);
             } else {
+
                 req.getSession().setAttribute("client", client);
-                resp.sendRedirect(req.getContextPath() + "/comptes");
+                System.out.println("toto");
+                logger.debug(client);
+                resp.sendRedirect(req.getContextPath() + "/compte");
             }
         }
     }

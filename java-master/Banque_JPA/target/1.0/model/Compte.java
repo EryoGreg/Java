@@ -43,8 +43,38 @@ public class Compte {
         this.owner = owner;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public String getLibelle() {
+        return libelle;
+    }
+
+    public float getSolde() {
+        return solde;
+    }
+
+    public Date getDate_creation() {
+        return date_creation;
+    }
+
+    public Set<Transaction> getTransactions() {
+        return transactions;
+    }
+
+    public Set<Transaction> getCredited_by() {
+        return credited_by;
+    }
+
+    public Client getOwner() {
+        return owner;
+    }
+
     public void addTransaction(String libelle, float montant, Compte destination){
         Transaction tr = new Transaction(libelle, montant, this, destination );
         transactions.add(tr);
     }
+
+
 }
