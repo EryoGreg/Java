@@ -1,9 +1,12 @@
 package main.webapp.manager;
 
 import main.webapp.model.Client;
+import main.webapp.model.Compte;
 import org.hibernate.HibernateException;
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
+
 
 public class ClientManager extends BaseManager {
     public static boolean saveClient(Client client){
@@ -25,13 +28,29 @@ public class ClientManager extends BaseManager {
         return em.find(Client.class, clientID);
     }
 
+
     public static Client loadClientByLoginAndPassword(String login, String password) {
-        EntityManager em = getEntityManager();
-        TypedQuery<Client> query = em.createQuery(
-                "SELECT c FROM Client c WHERE c.login='" + login + "'and c.password='" + password + "'", Client.class);
-        Client cli = query.getResultList().stream().findFirst().orElse(null);
-        return cli;
+        try {
+            EntityManager em = getEntityManager();
+            TypedQuery<Client> query = em.createQuery(
+                    "SELECT c FROM Client c WHERE c.login='" + login + "'and c.password='" + password + "'", Client.class);
+            Client cli = query.getSingleResult();
+            return cli;
+        } catch (NoResultException nre){
+            return null;
+        }
+
     }
+
+    public static void updatePassword(Client client, String password){
+        EntityManager em = getEntityManager();
+        Client cpt = em.find(Client.class, client.getId());
+        cpt.setPassword(password);
+        em.getTransaction().begin();
+        em.persist(cpt);
+        em.getTransaction().commit();
+    }
+
 
     public static void purgeTable(){
         EntityManager em = getEntityManager();

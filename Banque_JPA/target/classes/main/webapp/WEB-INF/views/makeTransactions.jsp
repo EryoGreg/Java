@@ -14,18 +14,17 @@
         (function($){
 
             $(function(){
-                // Plugin initialization
                 $('select').not('.disabled').formSelect();
 
             });
-        })(jQuery); // end of jQuery name space
+        })(jQuery);
 
     </script>
 </head>
 <body>
 
 
-<h1>Bonjour,<c:out value="${client.prenom}"/> <c:out value="${client.nom}"/></h1>
+<h1>Bonjour, <c:out value="${client.prenom}"/> <c:out value="${client.nom}"/></h1>
 
 
 <div class="container">
@@ -40,9 +39,7 @@
                 </select>
                 <label>Select your  account</label>
             </div>
-            <div class="align-items-center col s4">
-                <p style="text-align: center; vertical-align: middle;"><i class="material-icons">send</i></p>
-            </div>
+
 
             <div class="input-field col s4">
                 <input name="to" placeholder="Account to be credited" id="account_credited" type="number" step="0.01">

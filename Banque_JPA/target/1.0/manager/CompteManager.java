@@ -7,7 +7,9 @@ import org.hibernate.HibernateException;
 import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.transaction.Transactional;
+import java.util.List;
 
 public class CompteManager extends BaseManager {
 
@@ -18,11 +20,16 @@ public class CompteManager extends BaseManager {
         em.getTransaction().commit();
     }
 
-    public static void updateCompte(Compte compte) {
+    public static Compte loadCompteById(Integer compteID){
         EntityManager em = getEntityManager();
-        em.getTransaction().begin();
-        em.merge(compte);
-        em.getTransaction().commit();
+        return em.find(Compte.class, compteID);
+    }
+
+    public static List<Object[]> loadComptes(){
+        EntityManager em = getEntityManager();
+        Query query = em.createNativeQuery ("SELECT * from compte");
+        query.getResultList().toArray();
+        return query.getResultList();
     }
 
     @Transactional

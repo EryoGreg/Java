@@ -43,8 +43,8 @@ public class MakeTransactions extends HttpServlet {
         Compte compteTo = getCompteById(accountTo);
         Transaction transaction = new Transaction(libelle, amount, compteFrom, compteTo);
 
-        updateAccountAmount(compteFrom, (-1 * amount));
-        updateAccountAmount(compteTo, amount);
+        updateAccountAmount(compteFrom, (-1 * Math.abs(amount)));
+        updateAccountAmount(compteTo, Math.abs(amount));
 
         saveTransaction(transaction);
 

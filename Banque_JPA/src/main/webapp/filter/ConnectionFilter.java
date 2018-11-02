@@ -1,4 +1,4 @@
-/*package main.webapp.filter;
+package main.webapp.filter;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -44,4 +44,3 @@ public class ConnectionFilter implements Filter {
 
     }
 }
-*/

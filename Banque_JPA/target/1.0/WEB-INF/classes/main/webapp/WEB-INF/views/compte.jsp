@@ -37,8 +37,6 @@
 </c:forEach>
 
 
-<c:out value="toto"/>
-
 <%--<c:import var="compte" url="/solde"/>
 <c:out value="${soldejson}"/>--%>
 
@@ -51,5 +49,13 @@
 </body>
 
 <%@ include file="footer.jsp"%>
+
+
+
+
+<a href="<c:url value="/resetPassword">
+                <c:param name="id" value="${compte.id}"/>
+                </c:url>">
+    <fmt:message key = "reset_password"/></a></td>
 </body>
 </html>

@@ -33,7 +33,7 @@ public class Compte {
         this.type_compte = type_compte;
     }
 
-    public Compte(String libelle){
+    public Compte(float solde, String libelle, Client client){
         this.libelle = libelle;
         this.solde = 0;
         this.date_creation = new Date();
