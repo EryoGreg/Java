@@ -26,6 +26,7 @@
         <tr>
             <td><c:out value="${item.libelle}"/></td>
             <td><c:out value="${item.montant}"/> euros</td>
+            <br>
         </tr>
     </c:forEach>
 

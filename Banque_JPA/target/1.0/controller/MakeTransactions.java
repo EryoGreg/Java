@@ -52,7 +52,7 @@ public class MakeTransactions extends HttpServlet {
         Client newClient = loadClientById(tmpClient.getId());
         req.getSession().setAttribute("client", newClient);
 
-        resp.sendRedirect(req.getContextPath() + "comptes");
+        resp.sendRedirect(req.getContextPath() + "compte");
 
     }
 }
