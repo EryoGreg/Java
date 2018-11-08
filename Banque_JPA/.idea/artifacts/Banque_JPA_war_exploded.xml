@@ -24,7 +24,6 @@
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.11.1" />
           <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.11.1" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
-          <element id="library" level="project" name="java-json" />
         </element>
       </element>
       <element id="directory" name="META-INF">

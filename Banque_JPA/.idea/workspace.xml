@@ -8,71 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bd0d57f-19e2-4868-9cde-1704a01f5176" name="Default" comment="Commit du 26/10 matin">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/java_json.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/resetPassword.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/controller/ResetPassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Banque_JPA_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Banque_JPA_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Banque_JPA_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Banque_JPA_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Banque_JPA.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Banque_JPA.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_fr.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/REST/RestSolde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/REST/RestSolde.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/compte.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/compte.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransactions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransactions.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/controller/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/controller/Compte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/controller/MakeTransactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/controller/MakeTransactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/filter/ConnectionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/filter/ConnectionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/manager/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/manager/ClientManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/manager/CompteManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/manager/CompteManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/model/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/model/Compte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/REST/RestSolde.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/REST/RestSolde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/Resources/fr/ynov/Banque_JPA/bank_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/Resources/fr/ynov/Banque_JPA/bank_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/Resources/fr/ynov/Banque_JPA/bank_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/Resources/fr/ynov/Banque_JPA/bank_fr.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/REST/RestSolde.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/REST/RestSolde.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/WEB-INF/views/compte.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/WEB-INF/views/compte.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/WEB-INF/views/makeTransactions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/WEB-INF/views/makeTransactions.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/controller/Compte.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/controller/Compte.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/controller/MakeTransactions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/controller/MakeTransactions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/manager/ClientManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/manager/ClientManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/manager/CompteManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/manager/CompteManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/model/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/model/Compte.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/classes/main/webapp/model/Compte.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/views/compte.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/views/compte.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/WEB-INF/views/makeTransactions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/WEB-INF/views/makeTransactions.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/controller/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/controller/Compte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/controller/MakeTransactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/controller/MakeTransactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/filter/ConnectionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/filter/ConnectionFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/manager/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/manager/ClientManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/manager/CompteManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/manager/CompteManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/1.0/model/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/1.0/model/Compte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Resources/fr/ynov/Banque_JPA/bank_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Resources/fr/ynov/Banque_JPA/bank_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Resources/fr/ynov/Banque_JPA/bank_fr.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Resources/fr/ynov/Banque_JPA/bank_fr.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/REST/RestSolde.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/REST/RestSolde.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/views/compte.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/views/compte.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/views/makeTransactions.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/WEB-INF/views/makeTransactions.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/controller/Compte.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/controller/Compte.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/controller/MakeTransactions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/controller/MakeTransactions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/manager/ClientManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/manager/ClientManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/manager/CompteManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/manager/CompteManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/model/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/model/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/webapp/model/Compte.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/webapp/model/Compte.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-master/java-master/Banque_JPA/.idea/libraries/Maven__org_json_json_20180813.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-master/java-master/Banque_JPA/src/main/webapp/REST/Compte.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-master/java-master/Banque_JPA/src/main/webapp/REST/RestSolde.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-master/java-master/Banque_JPA/src/main/webapp/REST/Solde.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-master/java-master/Banque_JPA/src/main/webapp/WEB-INF/transactions.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-master/java-master/Banque_JPA/src/main/webapp/WEB-INF/views/makeTransactions.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-master/java-master/Banque_JPA/src/main/webapp/WEB-INF/views/transactions.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-master/java-master/Banque_JPA/src/main/webapp/controller/MakeTransaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-master/java-master/Banque_JPA/src/main/webapp/controller/MakeTransactions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-master/java-master/Banque_JPA/src/main/webapp/controller/Solde.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-master/java-master/Banque_JPA/src/main/webapp/controller/Transactions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-master/java-master/Banque_JPA/src/main/webapp/manager/CompteManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-master/java-master/Banque_JPA/src/main/webapp/manager/TransactionManager.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -221,7 +160,7 @@
     <session id="1321178737">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.9" value="1" />
@@ -231,21 +170,21 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="988" />
-          <entry key="jsp" value="110" />
+          <entry key="jsp" value="126" />
           <entry key="properties" value="139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="988" />
-          <entry key="JSP" value="110" />
+          <entry key="JSP" value="126" />
           <entry key="Properties" value="139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="37" />
-          <entry key="jsp" value="10" />
+          <entry key="jsp" value="19" />
           <entry key="properties" value="2" />
           <entry key="xml" value="2" />
         </counts>
@@ -253,7 +192,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="37" />
-          <entry key="JSP" value="10" />
+          <entry key="JSP" value="19" />
           <entry key="Properties" value="2" />
           <entry key="XML" value="2" />
         </counts>
@@ -262,14 +201,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/controller/ResetPassword.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details_compte.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="49" column="42" lean-forward="true" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -277,20 +213,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/compte.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/manager/ClientManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="48" column="8" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="506">
+              <caret line="55" column="39" lean-forward="true" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -298,31 +222,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/resetPassword.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
+            <state relative-caret-position="585">
               <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_fr.properties">
-          <provider editor-type-id="ResourceBundle" />
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/transactions.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="315">
+              <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_en.properties">
-          <provider editor-type-id="ResourceBundle" />
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransactions.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            <state relative-caret-position="345">
+              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -341,8 +269,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>value</find>
-      <find>loadCompteById</find>
       <find>getSolde</find>
       <find>toString</find>
       <find>date</find>
@@ -371,6 +297,8 @@
       <find>req</find>
       <find>upd</find>
       <find>update</find>
+      <find>class</find>
+      <find>d col</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -398,9 +326,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/transactions.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details_compte.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loaders/cssLoader.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/controller/MakeTransaction.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/manager/TransactionManager.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loaders/scriptLoader.jsp" />
@@ -416,7 +342,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/controller/Transactions.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/REST/RestSolde.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/controller/Compte.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransactions.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/filter/ConnectionFilter.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/controller/Login.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/model/Client.java" />
@@ -427,9 +352,12 @@
         <option value="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_en.properties" />
         <option value="$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_fr.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/controller/MakeTransactions.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/compte.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/resetPassword.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/controller/ResetPassword.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/compte.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransactions.jsp" />
       </list>
     </option>
   </component>
@@ -469,10 +397,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="960" />
-    <option name="height" value="608" />
+    <option name="width" value="1440" />
+    <option name="height" value="811" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -922,7 +850,7 @@
       <workItem from="1540559750214" duration="1592000" />
       <workItem from="1541146036627" duration="3722000" />
       <workItem from="1541149882800" duration="8512000" />
-      <workItem from="1541163687454" duration="2956000" />
+      <workItem from="1541163687454" duration="6816000" />
     </task>
     <task id="LOCAL-00001" summary="Testing commit">
       <created>1539850688704</created>
@@ -981,7 +909,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113127000" />
+    <option name="totallyTimeSpent" value="116987000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -994,9 +922,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1440" height="810" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48507464" visible="true" weight="0.15379113" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48507464" visible="true" weight="0.15379113" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Persistence" order="2" sideWeight="0.51492536" side_tool="true" weight="0.25894135" />
       <window_info id="Designer" order="3" />
@@ -1150,13 +1077,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loaders/scriptLoader.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1233,24 +1153,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransactions.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="43" column="44" lean-forward="true" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/controller/Login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/transactions.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1296,27 +1202,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details_compte.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/controller/MakeTransactions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -1324,29 +1209,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_fr.properties">
-      <provider editor-type-id="ResourceBundle" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_en.properties">
-      <provider editor-type-id="ResourceBundle" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/compte.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
@@ -1384,6 +1246,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/controller/ResetPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="31" column="58" lean-forward="true" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/manager/ClientManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -1394,23 +1266,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/resetPassword.jsp">
+    <entry file="file://$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_fr.properties">
+      <provider editor-type-id="ResourceBundle" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="480">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/controller/ResetPassword.java">
+    <entry file="file://$PROJECT_DIR$/src/Resources/fr/ynov/Banque_JPA/bank_en.properties">
+      <provider editor-type-id="ResourceBundle" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/details_compte.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/compte.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
-          <caret line="49" column="42" lean-forward="true" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="55" column="39" lean-forward="true" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/makeTransactions.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/resetPassword.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/transactions.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>

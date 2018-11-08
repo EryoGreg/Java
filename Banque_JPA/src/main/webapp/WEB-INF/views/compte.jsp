@@ -40,9 +40,9 @@
 <%--<c:import var="compte" url="/solde"/>
 <c:out value="${soldejson}"/>--%>
 
-<a class="waves-effect waves-light btn blue darken-3" href="
+<a href="
     <c:url value="maketransactions">
-    </c:url>">Virement<i class="material-icons right">send</i>
+    </c:url>">Virement<i>send</i>
 </a>
 
 

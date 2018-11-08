@@ -27,10 +27,9 @@
 <h1>Bonjour, <c:out value="${client.prenom}"/> <c:out value="${client.nom}"/></h1>
 
 
-<div class="container">
+<div >
     <form id="transactionsForm" action="/maketransactions" method="post">
-        <div class="row">
-            <div class="input-field col s4">
+        <div         <div>
                 <select  name="from" form="transactionsForm">
                     <option value="" disabled selected>Choose your option</option>
                     <c:forEach items="${client.comptes}" var="item">
@@ -41,24 +40,24 @@
             </div>
 
 
-            <div class="input-field col s4">
+            <div>
                 <input name="to" placeholder="Account to be credited" id="account_credited" type="number" step="0.01">
                 <label for="account_credited">Enter the number of the account to be credited</label>
             </div>
 
-            <div class="input-field col s6">
+            <div>
                 <input name="amount" placeholder="Amount" id="amount_money" type="number" step="0.01">
                 <label for="amount_money">Amount</label>
             </div>
 
-            <div class="input-field col s6">
+            <div>
                 <input name="libelle" placeholder="Libelle" id="lib" type="text">
                 <label for="lib">Libelle</label>
             </div>
         </div>
 
-        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-            <i class="material-icons right">send</i>
+        <button type="submit" name="action">Submit
+            <i>send</i>
         </button>
 
     </form>
