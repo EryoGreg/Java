@@ -1,13 +1,7 @@
-<%@ include file="header.jsp"%>
-
-<fmt:setBundle basename="Resources.fr.ynov.Banque_JPA.bank"/>
+<%@ include file="header.jsp" %>
 
 <!DOCTYPE html>
-<html lang="${param.lang}">
-
-<c:if test="${param.lang != null}">
-    <fmt:setLocale value = "${param.lang}" scope="session"/>
-</c:if>
+<%@ include file="language.jsp" %>
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +11,11 @@
     <title><fmt:message key = "title_compte"/></title>
 </head>
 <body>
-<p><fmt:message key = "welcome_compte"/><c:out value=" ${client.prenom}"/> <c:out value=" ${client.nom}"/></p>
+
+<div align="center">
+    <div class="container container-fluid">
+        <div class=" raw jumbotron">
+<h1><fmt:message key = "welcome_compte"/><c:out value=" ${client.prenom}"/> <c:out value=" ${client.nom}"/></h1>
 <h2><fmt:message key = "list_compte"/></h2>
 
 
@@ -25,9 +23,9 @@
     <tr>
 
         <td><c:out value="${compte.id}"/></td>
-        <td><c:out value="Livret ${compte.libelle}"/></td>
+        <td><c:out value="Livret ${compte.libelle}"/> : </td>
 
-        <td><c:out value="${compte.solde}"/></td>
+        <b><c:out value="${compte.solde}"/></b>
         <td>
             <a href="<c:url value="/transactions">
                 <c:param name="id" value="${compte.id}"/>
@@ -37,14 +35,14 @@
     </tr>
 </c:forEach>
 
-
+</br>
 
 <a href="<c:url value="/resetPassword">
                 <c:param name="id" value="${compte.id}"/>
                 </c:url>">
     <fmt:message key = "reset_password"/></a></td>
 
-
+</br>
 
 <a href="
     <c:url value="maketransactions">
@@ -52,21 +50,20 @@
     <fmt:message key = "make_deal"/>
 </a>
 
-<h3><fmt:message key = "create_account"/></h3>
+<h4><fmt:message key = "create_account"/></h4>
 <form method="post" action="${pageContext.request.contextPath}/detailsCompte">
     <label for="accountType"></label><br />
     <select id="accountType" name="compte_libelle">
         <option value="Livret A" selected>Livret A</option>
         <option value="Livret Jeune">Livret Jeune</option>
     </select>
-    <input type="submit" />
+    <input type="submit" class="btn btn-info" />
 </form>
 
-
-
-
-</body>
-<%@ include file="footer.jsp"%>
+    <%@ include file="footer.jsp"%>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

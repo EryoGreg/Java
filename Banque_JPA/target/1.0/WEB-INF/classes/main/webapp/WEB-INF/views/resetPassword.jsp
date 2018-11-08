@@ -1,13 +1,7 @@
-<%@ include file="header.jsp"%>
-
-<fmt:setBundle basename="Resources.fr.ynov.Banque_JPA.bank"/>
+<%@ include file="header.jsp" %>
 
 <!DOCTYPE html>
-<html lang="${param.lang}">
-
-<c:if test="${param.lang != null}">
-    <fmt:setLocale value = "${param.lang}" scope="session"/>
-</c:if>
+<%@ include file="language.jsp" %>
 
 <head>
     <meta charset="UTF-8">
@@ -28,16 +22,16 @@
 <form id="transactionsForm" action="/resetPassword" method="post">
     <div>
         <div>
-            <input name="oldpassword" placeholder="Old Password" id="oldpassword" type="password">
-            <fmt:message key = "odlPassword"/><label for="oldpassword"></label>
+            <input class="form-control" name="oldpassword" placeholder="Enter old password" id="oldpassword" type="password">
+            <label for="oldpassword"></label>
         </div>
         <div>
-            <input name="newpassword" placeholder="New Password" id="newpassword" type="password">
-            <fmt:message key = "newPassword"/><label for="newpassword"></label>
+            <input class="form-control" name="newpassword" placeholder="Enter new password" id="newpassword" type="password">
+            <label for="newpassword"></label>
         </div>
     </div>
 
-    <button type="submit" name="action">Submit</button>
+    <button class="btn btn-success" type="submit" name="action">Submit</button>
 
 
     <c:if test="${errorMsg != null}">
@@ -45,8 +39,6 @@
     </c:if>
 
 </form>
-
-
 
 </body>
 

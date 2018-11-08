@@ -1,14 +1,8 @@
-<%@ include file="header.jsp"%>
-
-<fmt:setBundle basename="Resources.fr.ynov.Banque_JPA.bank"/>
-
+<%@ include file="header.jsp" %>
 
 <!DOCTYPE html>
-<html lang="${param.lang}">
+<%@ include file="language.jsp" %>
 
-<c:if test="${param.lang != null}">
-    <fmt:setLocale value = "${param.lang}" scope="session"/>
-</c:if>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"

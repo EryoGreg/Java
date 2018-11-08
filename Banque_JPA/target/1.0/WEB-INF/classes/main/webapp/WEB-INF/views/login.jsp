@@ -1,30 +1,27 @@
-<%@ include file="header.jsp"%>
-
-
+<%@ include file="header.jsp" %>
 
 <!DOCTYPE html>
-<html lang="${param.lang}">
+<%@ include file="language.jsp" %>
+
 <head>
-    <fmt:setLocale value="${param.lang}" scope="session"/>
-    <fmt:setBundle basename="Resources.fr.ynov.Banque_JPA.bank"/>
     <title>Login JPA BANK</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<div>
-    <div>
-        <div>
+<div align="center">
+    <div class="container container-fluid">
+        <div class=" raw jumbotron">
             <form action="/login" method="post">
 					<span>
-						<fmt:message key="signIn"/>
+						<h1><fmt:message key="signIn"/></h1>
 					</span>
-                <div class="wrap-input100 validate-input m-b-16" data-validate="<fmt:message key="login"/>">
+                <div class= "validate-input" data-validate="<fmt:message key="login"/>">
                     <input class="input100" type="text" name="login" placeholder="<fmt:message key="username"/>">
                     <span class="focus-input100"></span>
                 </div>
 
-                <div data-validate="<fmt:message key="enterPassword"/>">
+                <div class=" form-control validate-input" data-validate="<fmt:message key="enterPassword"/>">
                     <input class="input100" type="password" name="password" placeholder="<fmt:message key="password"/>">
                     <span class="focus-input100"></span>
                 </div>
@@ -40,7 +37,7 @@
                 </c:if>
 
                 <div class=>
-                    <input type="submit" value='<fmt:message key="submit"/>'>
+                    <input type="submit" class="btn btn-success" value='<fmt:message key="submit"/>'>
                 </div>
 
                 <div>
@@ -50,11 +47,10 @@
                     </a>
                 </div>
             </form>
+            <%@ include file="footer.jsp"%>
         </div>
     </div>
+
 </div>
-
-<%@ include file="footer.jsp"%>
-
 </body>
 </html>

@@ -1,13 +1,7 @@
 <%@ include file="header.jsp" %>
 
-<fmt:setBundle basename="Resources.fr.ynov.Banque_JPA.bank"/>
-
 <!DOCTYPE html>
-<html lang="${param.lang}">
-
-<c:if test="${param.lang != null}">
-    <fmt:setLocale value="${param.lang}" scope="session"/>
-</c:if>
+<%@ include file="language.jsp" %>
 
 <head>
     <meta charset="UTF-8">
@@ -29,13 +23,14 @@
             <a href="<c:url value="/transactions">
                 <c:param name="id" value="${compte.id}"/>
                 </c:url>">
-                <fmt:message key = "more_details"/></a></td>
+                <fmt:message key = "enter_number"/></a></td>
         </br>
     </tr>
 </c:forEach>
+
+
+
 </body>
 
 <%@ include file="footer.jsp" %>
-
-</body>
 </html>
