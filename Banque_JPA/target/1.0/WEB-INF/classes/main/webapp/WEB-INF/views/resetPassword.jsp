@@ -22,15 +22,18 @@
 
 <body>
 
+
+<h2><fmt:message key = "title_resetPassword"/></h2>
+
 <form id="transactionsForm" action="/resetPassword" method="post">
     <div>
         <div>
             <input name="oldpassword" placeholder="Old Password" id="oldpassword" type="password">
-            <label for="oldpassword"><fmt:message key = "odlPassword"/></label>
+            <fmt:message key = "odlPassword"/><label for="oldpassword"></label>
         </div>
         <div>
             <input name="newpassword" placeholder="New Password" id="newpassword" type="password">
-            <label for="newpassword"><fmt:message key = "newPassword"/></label>
+            <fmt:message key = "newPassword"/><label for="newpassword"></label>
         </div>
     </div>
 

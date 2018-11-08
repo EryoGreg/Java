@@ -1,10 +1,12 @@
 <%@ include file="header.jsp"%>
 
-<fmt:setBundle basename="Resources.fr.ynov.Banque_JPA.bank"/>
+
 
 <!DOCTYPE html>
 <html lang="${param.lang}">
 <head>
+    <fmt:setLocale value="${param.lang}" scope="session"/>
+    <fmt:setBundle basename="Resources.fr.ynov.Banque_JPA.bank"/>
     <title>Login JPA BANK</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">

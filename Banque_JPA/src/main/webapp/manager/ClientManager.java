@@ -60,11 +60,4 @@ public class ClientManager extends BaseManager {
         em.createQuery("delete from Client ").executeUpdate();
         em.getTransaction().commit();
     }
-
-    public static void deleteClient(Client cli) {
-        EntityManager em = getEntityManager();
-        em.getTransaction().begin();
-        em.remove(cli);
-        em.getTransaction().commit();
-    }
 }

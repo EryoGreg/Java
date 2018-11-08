@@ -14,7 +14,6 @@ public class Compte {
     private String libelle;
     private float solde;
     private Date date_creation;
-    private int type_compte;
 
     @OneToMany(mappedBy = "compte_source", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<Transaction> transactions = new LinkedHashSet<Transaction>();
@@ -23,23 +22,23 @@ public class Compte {
     private Set<Transaction> credited_by = new LinkedHashSet<Transaction>();
 
     @ManyToOne
-    @JoinColumn(name="owner")
+    @JoinColumn(name = "owner")
     private Client owner;
 
     public Compte(float solde, Date date_creation, String libelle, int type_compte) {
         this.libelle = libelle;
         this.solde = solde;
         this.date_creation = date_creation;
-        this.type_compte = type_compte;
     }
 
-    public Compte(float solde, String libelle, Client client){
+    public Compte(float solde, String libelle, Client client) {
         this.libelle = libelle;
         this.solde = 0;
         this.date_creation = new Date();
     }
 
-    public Compte() {}
+    public Compte() {
+    }
 
     public void setOwner(Client owner) {
         this.owner = owner;
@@ -53,6 +52,10 @@ public class Compte {
         return libelle;
     }
 
+    public void setLibelle(String libelle) {
+        this.libelle = libelle;
+    }
+
     public float getSolde() {
         return solde;
     }
@@ -60,8 +63,15 @@ public class Compte {
     public void setSolde(float solde) {
         this.solde = solde;
     }
+
+
     public Date getDate_creation() {
         return date_creation;
+    }
+
+
+    public void setDate_creation(Date date_creation) {
+        this.date_creation = date_creation;
     }
 
     public Set<Transaction> getTransactions() {
@@ -76,16 +86,8 @@ public class Compte {
         return owner;
     }
 
-    public void addTransaction(String libelle, float montant, Compte destination){
-        Transaction tr = new Transaction(libelle, montant, this, destination );
+    public void addTransaction(String libelle, float montant, Compte destination) {
+        Transaction tr = new Transaction(libelle, montant, this, destination);
         transactions.add(tr);
     }
-
-    public int getType_compte() {
-        return type_compte;
-    }
-
-    public void setType_compte(int type_compte) {
-        this.type_compte = type_compte;
-    }
-    }
+}

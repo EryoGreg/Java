@@ -7,9 +7,8 @@ import main.webapp.manager.CompteManager;
 import main.webapp.model.Compte;
 
 import static main.webapp.manager.ClientManager.loadClientById;
-import static main.webapp.manager.CompteManager.loadCompteById;
-import static main.webapp.manager.CompteManager.loadComptes;
-import static main.webapp.manager.CompteManager.saveCompte;
+import static main.webapp.manager.CompteManager.*;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -51,7 +50,7 @@ public class RestSolde extends HttpServlet{
             out.flush();
         } else {
             int id = Integer.valueOf(param);
-            Compte compte = loadCompteById(id);
+            Compte compte = getCompteById(id);
 
             JSONObject json = new JSONObject();
             try {

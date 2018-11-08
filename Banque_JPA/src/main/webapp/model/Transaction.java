@@ -49,7 +49,6 @@ public class Transaction {
 
     public Transaction(String libelle, float montant, Compte source, Compte destination){
         this.montant = montant;
-
         this.date = new Date();
         this.libelle = libelle;
         this.compte_source = source;

@@ -1,12 +1,8 @@
 package main.webapp.manager;
 
-import main.webapp.model.Client;
-import main.webapp.model.Compte;
-import org.hibernate.HibernateException;
 
-import javax.persistence.Entity;
+import main.webapp.model.Compte;
 import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.transaction.Transactional;
 import java.util.List;
@@ -20,7 +16,7 @@ public class CompteManager extends BaseManager {
         em.getTransaction().commit();
     }
 
-    public static Compte loadCompteById(Integer compteID){
+    public static Compte getCompteById(Integer compteID){
         EntityManager em = getEntityManager();
         return em.find(Compte.class, compteID);
     }
@@ -44,10 +40,6 @@ public class CompteManager extends BaseManager {
 
     }
 
-    public static Compte getCompteById(Integer compteID){
-        EntityManager em = getEntityManager();
-        return em.find(Compte.class, compteID);
-    }
 
     public static void updateAccountAmount(Compte compte, float value) {
         EntityManager em = getEntityManager();
