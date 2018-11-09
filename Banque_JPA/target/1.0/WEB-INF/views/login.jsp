@@ -21,8 +21,8 @@
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class=" form-control validate-input" data-validate="<fmt:message key="enterPassword"/>">
-                    <input class="input100" type="password" name="password" placeholder="<fmt:message key="password"/>">
+                <div class="validate-input" data-validate="<fmt:message key="enterPassword"/>">
+                    <input class="input100" type="password" type="text" name="password" placeholder="<fmt:message key="password"/>">
                     <span class="focus-input100"></span>
                 </div>
 
@@ -40,12 +40,6 @@
                     <input type="submit" class="btn btn-success" value='<fmt:message key="submit"/>'>
                 </div>
 
-                <div>
-						<span><fmt:message key="noAccount"/></span>
-                    <a href="/signup">
-                        <fmt:message key="createAccount"/>
-                    </a>
-                </div>
             </form>
             <%@ include file="footer.jsp"%>
         </div>

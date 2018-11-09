@@ -21,8 +21,8 @@
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class=" form-control validate-input" data-validate="<fmt:message key="enterPassword"/>">
-                    <input class="input100" type="password" name="password" placeholder="<fmt:message key="password"/>">
+                <div class="validate-input" data-validate="<fmt:message key="enterPassword"/>">
+                    <input class="input100" type="password" type="text" name="password" placeholder="<fmt:message key="password"/>">
                     <span class="focus-input100"></span>
                 </div>
 

@@ -1,12 +1,8 @@
 import main.webapp.manager.ClientManager;
 import main.webapp.model.Client;
-import main.webapp.model.Compte;
 import org.junit.Before;
 import org.junit.Test;
 import junit.framework.*;
-
-import java.util.Date;
-
 
 public class Test01 extends TestCase {
 

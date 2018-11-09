@@ -42,7 +42,6 @@
 
 </body>
 
-
 <%@ include file="footer.jsp" %>
 
 </body>
